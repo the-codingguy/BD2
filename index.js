@@ -2,6 +2,8 @@ const express = require('express');
 const { resolve } = require('path');
 
 const app = express();
+app.use(cors());
+
 const port = 3010;
 
 let hotels = [
